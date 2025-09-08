@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 .logo {
   display: flex;
@@ -30,6 +31,7 @@ header {
 .subscribe-box {
   display: flex;
   gap: 5px;
+  margin-top: 10px;
 }
 .subscribe-box input {
   padding: 8px;
@@ -196,17 +198,66 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* Responsive */
+/* ------------------------------------ */
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* ------------------------------------ */
+
+/* Medium screens: tablets and smaller laptops */
+@media (max-width: 1024px) {
+  /* Make hero headline smaller so it fits better */
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  /* Adjust impact story title */
+  .story-text h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small screens: phones */
 @media (max-width: 768px) {
-  .hero, .impact-story {
+  /* Stack hero content vertically on mobile */
+  .hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .hero-text, .story-text {
+  .hero-text {
     margin-right: 0;
   }
-  .hero img, .impact-story img {
+  .hero img {
     max-width: 100%;
+  }
+
+  /* Stack impact story text and image */
+  .impact-story {
+    flex-direction: column;
+    text-align: center;
+  }
+  .impact-story img {
+    max-width: 100%;
+  }
+
+  /* Make headings smaller for mobile */
+  .hero-text h2,
+  .story-text h2,
+  .donation-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Adjust donate button size for mobile */
+  .donate-now {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Place subscribe box below logo neatly */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subscribe-box {
+    margin-top: 10px;
+    justify-content: center;
   }
 }
