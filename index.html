@@ -4,136 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charity:Water</title>
-  <style>
-    /* Reset some default browser styles */
-    body, h1, h2, h3, p, ul {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      border-bottom: 1px solid #ddd;
-    }
-    header h1 {
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      color: #333;
-    }
-    header h1 span {
-      margin-left: 8px;
-    }
-    .subscribe-box {
-      display: flex;
-      gap: 5px;
-    }
-    .subscribe-box input {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .subscribe-box button {
-      background-color: #f9b233;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .hero {
-      background: #e6e6e6;
-      padding: 40px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .hero-text {
-      flex: 1;
-      min-width: 280px;
-      margin-right: 20px;
-    }
-    .hero-text h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .hero-text p {
-      margin-bottom: 20px;
-    }
-    .donate-section {
-      background: #fff7e6;
-      padding: 15px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-    }
-    .donate-button {
-      display: block;
-      text-align: center;
-      background-color: #f9b233;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .hero img {
-      flex: 1;
-      max-width: 400px;
-      border-radius: 8px;
-    }
-    .socials {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .socials a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #666;
-      padding: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>💧 <span>Charity:Water</span></h1>
+    <div class="logo">
+      <span class="icon">🏛️</span>
+      <h1>Charity:Water</h1>
+    </div>
     <form class="subscribe-box">
       <input type="text" placeholder="email or phone number">
       <button type="submit">Subscribe</button>
     </form>
   </header>
 
+  <p class="newsletter-note">subscribe to newsletter for future updates</p>
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h2>One click.<br>One drop.<br>One life changed.</h2>
-      <p><strong>Hurry and join the movement</strong> to bring <br>clean water to everyone, everywhere.</p>
+      <p class="subtext">
+        hurry and join the movement to bring<br>
+        <strong>clean water to everyone, everywhere.</strong>
+      </p>
 
       <div class="donate-section">
-        <p>💡 Empowering students to end the global water crisis. Every dollar you give allows for clean water to communities who need it the most.</p>
-        <a href="#" class="donate-button">Donate</a>
-        <small>All types of payments are accepted</small>
+        <ul>
+          <li>empowering students to end the global water crisis. Every dollar you give allows for clean water to communities who need it the most.</li>
+        </ul>
+      </div>
+
+      <div class="donate-box">
+        <button class="donate-button">Donate</button>
+        <small>- all types payments are accepted -</small>
       </div>
     </div>
 
-    <img src="https://via.placeholder.com/400x300" alt="Clean water charity image">
+    <img src="https://via.placeholder.com/400x300" alt="Charity water placeholder">
   </section>
 
   <!-- Social Media -->
