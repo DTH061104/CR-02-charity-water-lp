@@ -112,6 +112,65 @@ header {
   margin-top: 20px;
 }
 
+/* Impact Story */
+.impact-story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: #ffffff;
+  gap: 20px;
+}
+.story-text {
+  flex: 2;
+  min-width: 280px;
+}
+.story-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.story-text blockquote {
+  margin: 15px 0;
+  padding-left: 15px;
+  border-left: 4px solid #f9b233;
+  font-style: italic;
+  color: #333;
+}
+.impact-story img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+/* Donation CTA */
+.donation-cta {
+  background: #fff7e6;
+  text-align: center;
+  padding: 50px 20px;
+}
+.donation-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.donation-cta p {
+  margin-bottom: 20px;
+}
+.donate-now {
+  background-color: #f9b233;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.donate-now:hover {
+  background-color: #cc7a00;
+  transform: scale(1.05);
+}
+
 /* Socials */
 .socials {
   text-align: center;
@@ -125,7 +184,7 @@ header {
   transition: color 0.3s ease;
 }
 .socials a:hover {
-  color: #f9b233; /* highlight orange on hover */
+  color: #f9b233;
 }
 
 /* Footer */
@@ -139,15 +198,15 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero {
+  .hero, .impact-story {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .hero-text {
+  .hero-text, .story-text {
     margin-right: 0;
   }
-  .hero img {
+  .hero img, .impact-story img {
     max-width: 100%;
   }
 }
